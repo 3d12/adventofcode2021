@@ -41,16 +41,16 @@ function interpretDirection(inputDirection) {
 		console.log("command: " + outcome.command + ", value: " + outcome.value)
 		switch (outcome.command) {
 			case 'up': if (aim - outcome.value < 0) {
-											aim = 0;
-										} else {
-											aim -= outcome.value;
-										}
-										break;
+					aim = 0;
+				} else {
+					aim -= outcome.value;
+				}
+				break;
 			case 'down': aim += outcome.value;
-										break;
+				break;
 			case 'forward': hposition += outcome.value;
-											vposition += (aim * outcome.value);
-										break;
+				vposition += (aim * outcome.value);
+				break;
 		}
 	}
 	console.log("Answer found! " + (hposition * vposition));

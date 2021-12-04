@@ -30,11 +30,11 @@ function interpretDirection(inputDirection) {
 	const distance = parseInt(found[2]);
 	switch (direction) {
 		case 'forward': hmodifier += distance;
-										break;
+			break;
 		case 'down': vmodifier += distance;
-										break;
+			break;
 		case 'up': vmodifier -= distance
-										break;
+			break;
 	}
 	return { hmodifier: hmodifier, vmodifier: vmodifier };
 }
